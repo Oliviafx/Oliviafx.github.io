@@ -1,3 +1,9 @@
 * {
 	font-family: 'Lato', sans-serif; 
 }
+
+h1 {
+	font-style: thin;
+	font-size: 400px;
+	font-color: #7FFFD4;
+}
