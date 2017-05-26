@@ -1,7 +1,7 @@
 * {
 	font-family: 'Lato', sans-serif; 
-	/*background-color: #ffffff;*/
-	background-image: -webkit-linear-gradient(#FFD194, #BC1324);
+	background-color: #ffffff;
+	/*background-image: -webkit-linear-gradient(#FFD194, #BC1324); */
 }
 
 h1 {
@@ -10,6 +10,8 @@ h1 {
 	font-weight: 300;
 	text-align: center;
 	color: #FFC0CB;
+	background-color: #000000;
+	opacity: 0.6;
 }
 
 p {
