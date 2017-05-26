@@ -4,7 +4,7 @@
 	/*background-image: -webkit-linear-gradient(#FFD194, #BC1324); */
 }
 
-#header {
+#logo {
 	font-size: 10em;
 	line-height: 1em;
 	font-weight: 300;
@@ -13,6 +13,7 @@
 }
 
 #navigation {
+	width: 100%;
 	background-color: #000000;
 	opacity: 0.6;
 }
