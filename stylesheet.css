@@ -17,3 +17,9 @@ p {
 #me {
 	border-radius: 100%;
 }
+
+img {
+	border-radius: 100%;
+	max-width: 5%;
+	max-height: auto;
+}
