@@ -1,6 +1,7 @@
 * {
 	font-family: 'Lato', sans-serif; 
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
+	background-image: -webkit-linear-gradient(#FFD194, #BC1324);
 }
 
 h1 {
@@ -8,14 +9,16 @@ h1 {
 	line-height: 1em;
 	font-weight: 300;
 	text-align: center;
-	color: #fff5ee;
+	color: #FFC0CB;
 }
 
 p {
-
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
 }
 
 img {
+	display: block;
 	border-radius: 100%;
 	height: 400px;
 	width: 400px;
