@@ -21,8 +21,8 @@ p {
 img {
 	display: block;
 	border-radius: 100%;
-	height: 400px;
-	width: 400px;
+	height: 250px;
+	width: 2500px;
 }
 
 ul {
@@ -31,4 +31,5 @@ ul {
 
 li {
 	display: inline-block;
+	color: white;
 }
