@@ -1,11 +1,11 @@
 * {
-	font-family: 'Lato'; 
+	font-family: 'Lato', sans-serif; 
 	background-color: #FFFACD;
 	font-color:  #7FFFD4;
 }
 
 h1 {
 	font-style: thin;
-	font-size: 40px;
+	font-size: 112px;
 	font-color: #7FFFD4;
 }
