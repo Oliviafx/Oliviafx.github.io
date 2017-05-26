@@ -1,6 +1,6 @@
 * {
 	font-family: 'Lato', sans-serif; 
-	background-color: #FFFACD;
+	background-color: white;
 }
 
 h1 {
@@ -8,6 +8,7 @@ h1 {
 	line-height: 1em;
 	font-weight: 300;
 	text-align: center;
+	color: seashell;
 }
 
 p {
