@@ -1,6 +1,6 @@
 #logo {
 	font-family: 'Lato', sans-serif; 
-	font-size: 10em;
+	font-size: 2em;
 	line-height: 1em;
 	font-weight: 300;
 	text-align: center;
@@ -22,14 +22,22 @@ img {
 	display: block;
 	border-radius: 100%;
 	height: 250px;
-	width: 2500px;
+	width: 250px;
+	float: left;
 }
+
 
 ul {
 
 }
 
 li {
+	font-family: 'Lato', sans-serif; 
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: 300;
 	display: inline-block;
 	color: white;
+	text-transform: uppercase;
+	margin: 16px 20px;
 }
