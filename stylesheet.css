@@ -5,7 +5,7 @@
 }
 
 h1 {
-	font-style: thin;
-	font-size: 112px;
-	font-color: #7FFFD4;
+	font-size: 10em;
+	line-height: 1em;
+	font-weight: 100;
 }
