@@ -6,8 +6,7 @@ body {
 }
 
 .banner {
-	width: 100%;
-	height: 400px;
+	height: 380px;
 	overflow: hidden;
 	text-align: center;
 	vertical-align: middle;
@@ -16,8 +15,10 @@ body {
 	color: #000;
 	line-height: 3em;
 	font-weight: 300;
-	background-image: url("images/banner.jpg");
+	background: url("images/banner.jpg") no-repeat center center fixed;
 	text-transform: uppercase;
+	background-size: cover;
+	font-weight: thin;
 }
 
 ul {
@@ -44,12 +45,11 @@ li a {
 	text-decoration: none;
 }
 
-.rightnav {
-	float: right;
-}
-
-.leftnav {
-	float: left;
+#topnav {
+	position: absolute;
+	height: 40px;
+	width: 100%;
+	background-color: white;
 }
 
 img {
@@ -62,4 +62,70 @@ img {
 
 .content {
 	text-align: center;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: thin;
+	text-transform: uppercase;
+}
+
+.content {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+	width: 800px;
+	text-align: center;
+	border: 2px solid #ADEAEA;
+	border-radius: 4px;
+	padding: 4px;
+}
+
+.toggle-box {
+	display: none;
+}
+
+.toggle-box + label {
+	cursor: pointer;
+	display: block;
+	font-weight: thin;
+	font-family: 'Lato', sans-serif;
+	line-height: 21px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+.toggle-box + label + div {
+	display: none;
+	margin-bottom: 10px;
+}
+
+.toggle-box:checked + label + div {
+	display: block;
+}
+
+.toggle-box + label:before {
+  background-color: #388E8E;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  content: "+";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  width: 20px;
+}
+
+.toggle-box:checked + label:before {
+  content: "\2212";
 }
