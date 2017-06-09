@@ -112,9 +112,11 @@ label {
 }
 
 summary::-webkit-details-marker {
- color: #388E8E;
- font-size: 125%;
- margin-right: 2px;
+ 	color: #388E8E;
+ 	font-size: 125%;
+ 	margin-right: 2px;
+ 	font-family: 'Lato', sans-serif;
+ 	font-weight: thin;
 }
 
 summary:focus {
