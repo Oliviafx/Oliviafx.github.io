@@ -66,12 +66,27 @@ img {
 
 p {
 	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
 }
 
 h1, h2 {
 	font-family: 'Lato', sans-serif;
 	font-weight: thin;
 	text-transform: uppercase;
+}
+
+h1 {
+	border-bottom: 1px solid black;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+label {
+	font-family: 'Lato', sans-serif;
+	font-weight: thin;
+	font-size: 25px;
 }
 
 .content {
@@ -86,46 +101,39 @@ h1, h2 {
 	padding: 4px;
 }
 
-.toggle-box {
-	display: none;
+.left {
+	width: 60%;
+	float: left;
 }
 
-.toggle-box + label {
-	cursor: pointer;
-	display: block;
-	font-weight: thin;
-	font-family: 'Lato', sans-serif;
-	line-height: 21px;
-	margin-bottom: 5px;
-	text-align: left;
+.right {
+	width: 40%;
+	float: right;
 }
 
-.toggle-box + label + div {
-	display: none;
-	margin-bottom: 10px;
+summary::-webkit-details-marker {
+ color: #388E8E;
+ font-size: 125%;
+ margin-right: 2px;
 }
 
-.toggle-box:checked + label + div {
-	display: block;
+summary:focus {
+	outline-style: none;
 }
 
-.toggle-box + label:before {
-  background-color: #388E8E;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  color: #FFFFFF;
-  content: "+";
-  display: block;
-  float: left;
-  font-weight: bold;
-  height: 20px;
-  line-height: 20px;
-  margin-right: 5px;
-  text-align: center;
-  width: 20px;
+article > details > summary {
+	font-size: 28px;
+	margin-top: 16px;
 }
 
-.toggle-box:checked + label:before {
-  content: "\2212";
+details > p {
+	margin-left: 24px;
+}
+
+details details {
+	margin-left: 36px;
+}
+
+details details summary {
+	font-size: 16px;
 }
