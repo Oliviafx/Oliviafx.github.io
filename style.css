@@ -2,7 +2,8 @@
 url(https://fonts.googleapis.com/css?family=Lato:300|Raleway:300)
 
 body {
-
+	font-family: 'Lato', sans-serif;
+	font-weight: thin;
 }
 
 .banner {
@@ -65,7 +66,7 @@ img {
 }
 
 p {
-	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
 	font-size: 18px;
 }
 
@@ -102,12 +103,12 @@ label {
 }
 
 .left {
-	width: 60%;
+	width: 40%;
 	float: left;
 }
 
 .right {
-	width: 40%;
+	width: 60%;
 	float: right;
 }
 
@@ -128,6 +129,7 @@ article > details > summary {
 	/*font-family: 'Lato', sans-serif;*/
 	font-size: 28px;
 	margin-top: 16px;
+	display: inline-block;
 }
 
 details > p {
@@ -143,4 +145,8 @@ details details {
 details details summary {
 	/*font-family: 'Lato', sans-serif;*/
 	font-size: 16px;
+}
+
+.description {
+	height: 240px;
 }
