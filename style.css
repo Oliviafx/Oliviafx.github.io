@@ -78,6 +78,9 @@ h1, h2 {
 
 h1 {
 	border-bottom: 1px solid black;
+	margin-left: 150px;
+	margin-right: 150px;
+
 }
 
 h2 {
@@ -93,12 +96,9 @@ label {
 .content {
 	margin-top: 50px;
 	margin-bottom: 50px;
-	margin-left: 150px;
-	margin-right: 150px;
+	
 	width: 800px;
 	text-align: center;
-	/* border: 2px solid #ADEAEA;
-	border-radius: 4px; */
 	padding: 4px;
 }
 
