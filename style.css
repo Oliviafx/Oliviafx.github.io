@@ -147,6 +147,7 @@ details details summary {
 	font-size: 16px;
 }
 
-.description {
-	height: 240px;
+.description, .subject {
+	height: auto; 
+	overflow: auto;
 }
