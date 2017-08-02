@@ -141,6 +141,10 @@ label {
   -ms-transform: translate(-50%, -50%);
 }
 
+.orgs {
+	display: inline-block;
+}
+
 /*
 .left {
 	width: 40%;
