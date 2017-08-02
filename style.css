@@ -101,6 +101,7 @@ label {
 
 .container {
   position: relative;
+  display: inline-block;
   width: 25%;
 }
 
