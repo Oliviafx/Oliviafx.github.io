@@ -102,6 +102,7 @@ label {
 .container {
   position: relative;
   display: inline-block;
+  float: left;
   width: 25%;
 }
 
