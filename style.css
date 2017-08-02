@@ -105,12 +105,12 @@ label {
 
 .container {
   position: relative;
-  /*width: 50%;*/
+  width: 25%;
 }
 
 .image {
   display: block;
- /* width: 100%; */
+  width: 100%; 
   height: auto;
   border-radius: 25px;
 }
