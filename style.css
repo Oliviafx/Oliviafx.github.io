@@ -114,7 +114,8 @@ label {
 }
 
 .overlay {
-  position: absolute;
+  position: relative;
+  display: inline-block;
   top: 0;
   bottom: 0;
   left: 0;
