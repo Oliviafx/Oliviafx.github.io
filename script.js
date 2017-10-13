@@ -23,3 +23,24 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+//Image Collage
+function getRandomSize(min, max) {
+  return Math.round(Math.random() * (max - min) + min);
+}
+
+var allImages = "";
+
+for (var i = 0; i < 25; i++) {
+  var width = getRandomSize(200, 400);
+  var height =  getRandomSize(200, 400);
+  //allImages += '<img src="https://placekitten.com/'+height+'/'+width+'" alt="pretty kitty">';
+  allImages += '<img src="images/CritterWorld.jpg" id="critter" style="width:25%;height:25%;">';
+  allImages += '<img src="images/pawpulation.png" style="width:30%;height:30%;">';
+  allImages += '<img src="images/SNAP1.PNG" style="width:15%;height:15%;">';
+  allImages += '<img src="images/recommendations.PNG" style="width:30%;height:40%;">';
+
+}
+
+$('#photos').append(allImages);
