@@ -6,9 +6,11 @@ body {
 	font-weight: thin;
 	text-align: center;
   max-width: 300px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   display: block;
 }
+
 
 .banner {
 	height: 380px;
@@ -80,7 +82,6 @@ div.polaroidContainer {
 }
 
 p {
-	/*font-family: 'Raleway', sans-serif;*/
 	font-size: 18px;
 }
 
@@ -95,7 +96,6 @@ h1 {
 	margin-left: 150px;
 	margin-right: 150px;
 	text-align: center;
-
 }
 
 h2 {
@@ -103,8 +103,6 @@ h2 {
 }
 
 .content {
-	margin-top: 50px;
-	margin-bottom: 50px;
 	width: 800px; 
 	text-align: center;
 	padding: 4px;
@@ -120,36 +118,6 @@ h2 {
 .image {
   display: inline-block;
   height: auto;
-  /*border-radius: 25px;*/
-}
-
-.overlay {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(0,0,0,0.6);
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  font-family: 'Lato', sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
 
 .orgs {
@@ -158,4 +126,8 @@ h2 {
 
 .Projects{
 	display: inline-block;
+}
+
+.footer{
+  margin-bottom: 0;
 }
