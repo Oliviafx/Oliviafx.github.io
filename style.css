@@ -55,7 +55,7 @@ li a {
 }
 
 img {
-	display: block;
+	display: inline-block;
 	margin: auto;
 	vertical-align: middle;
 	align-items: center;
@@ -103,12 +103,11 @@ label {
   position: relative;
   display: inline-block;
   float: left;
-  /*width: 25%;*/
+  width: 25%;
 }
 
 .image {
   display: inline-block;
-  /*width: 100%; */
   height: auto;
   border-radius: 25px;
 }
