@@ -104,13 +104,33 @@ h2 {
 }
 
 .content {
+	width: 800px; 
 	text-align: center;
-	/*border: 7px dashed red;*/
-	margin: auto;
-	width: 80%;
-} 
+	padding: 4px;
+	box-shadow: 10px 10px 5px #888888;
+	border: 7px dashed red;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
 
 .image {
   display: inline-block;
   height: auto;
+}
+
+#orgs {
+	display: inline-block;
+}
+
+.Projects{
+	display: inline-block;
+}
+
+.footer{
+  margin-bottom: 0;
 }
