@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <link href="style.css" type="text/css" rel="stylesheet">
- <title>Olivia Xiang</title>
- <link rel="icon" type="image/gif" href="images/heartFavicon.gif">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <script src="assets/js/bootstrap.min.js"></script>
- <link href="assets/css/bootstrap.min.css" rel="stylesheet">
- <script src="jquery-3.2.1.js"></script>
- <script src ="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <title>Olivia Xiang</title>
+  <link rel="icon" type="image/gif" href="images/heartFavicon.gif">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <script src="jquery-3.2.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
+
 <body>
 
-  <div class="navigation" id="topnav">
-    <ul>
-      <li> <a href="#navigation" > Home </a> </li>
-      <li> <a href="#Projects" > Projects </a> </li>
-      <li> <a href="#Experience" > Experience </a> </li>
-      <li> <a href="#Organizations" > Organizations </a> </li>
-      <li> <a href="#Contact" > Contact Me! </a> </li>
-    </ul>
-  </div>
+  <nav class="navbar navbar-light" style="background-color: #deeaee;">
+    <a class="navbar-brand" href="#">Home</a>
+    <a class="navbar-brand" href="#Projects">Projects</a>
+    <a class="navbar-brand" href="#Experience">Experience</a>
+    <a class="navbar-brand" href="#Organizations">Organizations</a>
+    <a class="navbar-brand" href="#Contact">Contact Me!</a>
+  </nav>
 
-  <div class="banner" id="particles-js"> 
+  <div class="banner" id="particles-js">
 
     Olivia Xiang
 
@@ -32,77 +38,235 @@
   <div class="content" id="About">
     <h1> About Me </h1>
 
-    <p> Hi, I'm Olivia! </p>
-    <p> Whenever I'm not programming, I can be found knitting hats, playing tennis, reading, or writing. </p>
+    <p> Lover of all things Disney </p>
   </div> <!-- Div to end About Section-->
 
 
   <div class="content" id="Experience">
-    <h1> Experience </h1>
-    <img src="images/capitalone.png" class="image" style="width: 20%; height: 50%;">
+    <h1> Work Experience </h1>
+    <img src="images/capitalone.png" class="image" style="width: 20%; height: 50%;" class="btn btn-light" data-toggle="modal"
+      data-target="#cap1Modal">
     <img src="images/cis.png" class="image" style="width: 20%; height: 50%;">
-    <img src="images/ucforc.png" class="image" style="width:15%;height:15%;">
+    <!-- <img src="images/ucforc.png" class="image" style="width:15%;height:15%;"> -->
 
   </div> <!-- Div to end Experience Section-->
 
-  <div class="content" id="research">
-    <h1> Research </h1>
-    <img src="images/cornell.jpg" class="image" style="width:15%;height:15%;">
-    <img src="images/fsuSC.png" class="image" style="width:15%;height:15%;">
-    <img src="images/UFMREC.jpg" class="image" style="width:18%;height:18%;">
-  </div> <!-- Div to end Research Section-->
 
-  <div class="content" id="Projects">
-    <h1> Recent Projects </h1>
-    <div class="polaroidContainer">
-      <div class="polaroid">
-        <img src="images/CritterWorld.jpg" style="width:100%">
+  <div class="modal fade" id="cap1Modal" tabindex="-1" role="dialog" aria-labelledby="cap1Modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Capital One</h1>
+          <h2 class="modal-title text-center" id="subtitle">Software Engineering Intern</h2>
+        </div>
+        <div class="modal-body">
+          Worked on an internal mobile development team.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
-    <div class="polaroidContainer">
-      <div class="polaroid">
-        <img src="images/snapSmall.PNG" style="width:100%;">
+  </div>
+
+  <div class="modal fade" id="cs2112Modal" tabindex="-1" role="dialog" aria-labelledby="cs2112Modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Teaching Assistant</h1>
+        </div>
+        <div class="modal-body">
+          Teaching Assistant for CS 2112: Honors Object Oriented Design and Data Structures
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
-    <div class="polaroidContainer">
-      <div class="polaroid">
-        <img src="images/pawpulation.png" style="width:100%;">
-      </div>
-    </div>
-    <div class="polaroidContainer">
-      <div class="polaroid">
-        <img src="images/recommendations.PNG" style="width:100%;">
-      </div>
-    </div>
-  </div> <!-- Div to end Projects Section-->
-
-
-
-  <div class="content" id="orgs">
-    <h1> Organizations </h1>
-
-    <img src="images/bike.png" alt="Bike Team" style="width:15%;height:15%;">
-    <img src="images/RCPRS.png" alt="RCPRS" style="width:15%;height:15%;">
-    <img src="images/ACSU.png" alt="ACSU" style="width:15%;height:15%;">
-    <img src="images/WICC_0.png" style="width:15%;height:15%;">
-
-  </div> <!-- Div to end Orgs Section-->
-
-
-<div class="Footer" id="Contact">
-
-  <div class="navigation">
-    <ul>
-      <li> <a href="mailto:ofx2@cornell.edu" target="_top"> Email </a> </li>
-      <li > <a href="https://www.linkedin.com/in/olivia-xiang-724bb7135/" target="_blank"> LinkedIn </a> </li>
-      <li > <a href="https://github.com/Oliviafx" target="_blank"> Github </a> </li>
-      <li > <a href="images/resume.pdf" download> Resume </a> </li>
-    </ul>
   </div>
 
 
-</div> <!-- Div to end Footer-->
+  <div class="content" id="research">
+    <h1> Research </h1>
+    <img src="images/cornell.jpg" class="image" style="width:15%;height:15%;" class="btn btn-light" data-toggle="modal"
+      data-target="#cornellResearchModal">
+    <img src="images/RCPRS.png" alt="RCPRS" style="width:15%;height:15%;" class="btn btn-light" data-toggle="modal"
+      data-target="#rcprsModal">
+    <!-- <img src="images/fsuSC.png" class="image" style="width:15%;height:15%;">
+    <img src="images/UFMREC.jpg" class="image" style="width:18%;height:18%;"> -->
+  </div> <!-- Div to end Research Section-->
+
+  <!--Research Modals-->
+  <div class="modal fade" id="cornellResearchModal" tabindex="-1" role="dialog" aria-labelledby="cornellResearchModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Cornell Graphics and Vision Research Group</h1>
+        </div>
+        <div class="modal-body">
+          Studying the capabilities of realistic rendering in an augmented reality environment.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="rcprsModal" tabindex="-1" role="dialog" aria-labelledby="rcprsModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Hunter R. Rawlings Presidential Research Scholar</h1>
+        </div>
+        <div class="modal-body">
+          One of 40 people chosen each year to be a Rawlings research scholar.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="content" id="Projects">
+    <h1>Projects</h1>
+    <img src="images/logo.jpg" class="image" style="width:50%; height=30%" class="btn btn-light" data-toggle="modal"
+      data-target="#cityOfLightModal">
+  </div>
+
+  <div class="modal fade" id="cityOfLightModal" tabindex="-1" role="dialog" aria-labelledby="cityOfLightModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">City of Light</h1>
+        </div>
+        <div class="modal-body">
+          <p>When the lights go low in the City of Light, dangerous mythical creatures emerge to terrorize the streets,
+            and mime Annette comes out to banish them. Using Annette&apos;s powers of illusion, you will summon boxes
+            and
+            ropes to conceal her until she can dispel the monsters. While the citizens of Paris sleep, it is up to you
+            to
+            silently protect them from the menacing creatures that would do them harm.</p>
+          <p></p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tqyRrf05WgU?rel=0" allowfullscreen></iframe>
+          </div>
+          <p>This is a puzzle stealth game created by 6 undergraduates at Cornell University as part of CS 3152:
+            Introduction to Computer Game Design. I worked with Katie Sadoff, Pippen Wu, Amanda Trang, Mary Ji and Emma
+            Cohn on this project.</p>
+          <img src="images/fireworks.jpg" class="image" style="width:100%; height=50%;">
+          <p></p>
+          <p>Click below to download our game!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary pull-left" disabled>Windows</button>
+          <button type="button" class="btn btn-secondary pull-left" disabled>Mac</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" id="orgs">
+    <h1> Campus Involvement </h1>
+
+    <img src="images/bike.png" alt="Bike Team" style="width:25%;height:15%;" class="btn btn-light" data-toggle="modal"
+      data-target="#bikeModal">
+    <img src="images/ACSU.png" alt="ACSU" style="width:25%;height:15%;" class="btn btn-light" data-toggle="modal"
+      data-target="#acsuModal">
+    <img src="images/apo.png" alt="APO" style="width:25%;height:15%;" class="btn btn-light" data-toggle="modal"
+      data-target="#apoModal">
+    <img src="images/cornelldailysun.png" alt="sun" style="width:45%;height:25%;" class="btn btn-light" data-toggle="modal"
+      data-target="#sunModal">
+
+  </div> <!-- Div to end Orgs Section-->
+
+  <div class="modal fade" id="bikeModal" tabindex="-1" role="dialog" aria-labelledby="bikeModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Autonomous Bicycle Team</h1>
+          <h2 class="modal-title text-center" id="subtitle">Team Lead</h2>
+        </div>
+        <div class="modal-body">
+          The Autonomous Bicycle Team aims to build a self-balancing, self-navigating robotic bicycle.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="acsuModal" tabindex="-1" role="dialog" aria-labelledby="acsuModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Association of Computer Science Undergraduates</h1>
+          <h2 class="modal-title text-center" id="subtitle">Corporate Team Member</h2>
+        </div>
+        <div class="modal-body">
+          Member of the corporate team of the Association of Computer Science Undergraduates, Cornell's ACM chapter.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="apoModal" tabindex="-1" role="dialog" aria-labelledby="apoModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Alpha Phi Omega</h1>
+        </div>
+        <div class="modal-body">
+          Member of the Gamma Chapter of Alpha Phi Omega, a national service fraternity.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="sunModal" tabindex="-1" role="dialog" aria-labelledby="sunModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLongTitle">Cornell Daily Sun</h1>
+          <h2 class="modal-title text-center" id="subtitle">Graphic Designer</h2>
+        </div>
+        <div class="modal-body">
+          Graphic Designer Compet for the Cornell Daily Sun.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="Footer" id="Contact">
+
+    <div class="navigation">
+      <ul>
+        <li> <a href="mailto:ofx2@cornell.edu" target="_top"> Email </a> </li>
+        <li> <a href="https://www.linkedin.com/in/olivia-xiang-724bb7135/" target="_blank"> LinkedIn </a> </li>
+        <li> <a href="https://github.com/Oliviafx" target="_blank"> Github </a> </li>
+        <li> <a href="images/resume.pdf" download> Resume </a> </li>
+      </ul>
+    </div>
+
+
+  </div> <!-- Div to end Footer-->
 
 
 </body>
+
 </html>

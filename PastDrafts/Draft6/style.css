@@ -1,0 +1,116 @@
+@import
+url(https://fonts.googleapis.com/css?family=Lato:300|Raleway:300)
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: thin;
+	text-align: center;
+  	max-width: 300px;
+  	margin: 0 auto;
+  	padding: 0;
+  	display: block;
+  	background-color: #A9A9A9;
+}
+
+
+.banner {
+	height: 380px;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Lato', sans-serif; 
+	font-size: 5em;
+	color: #000;
+	line-height: 3em;
+	font-weight: 300;
+	background: url("images/banner.jpg") no-repeat center center fixed;
+	text-transform: uppercase;
+	background-size: cover;
+	font-weight: thin;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	font-family: 'Lato', sans-serif; 
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: 300;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#topnav {
+	position: absolute;
+	height: 40px;
+	width: 100%;
+	background-color: white;
+}
+
+img {
+	display: inline-block;
+	margin: auto;
+	vertical-align: middle;
+	align-items: center;
+	text-align: center;
+}
+
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+div.polaroidContainer {
+  padding: 25px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+p {
+	font-size: 18px;
+}
+
+h1, h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: thin;
+	text-transform: uppercase;
+}
+
+h1 {
+	border-bottom: 1px solid black;
+	margin-left: 150px;
+	margin-right: 150px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+.content {
+	text-align: center;
+	/*border: 7px dashed red;*/
+	margin: auto;
+	width: 80%;
+} 
+
+.image {
+  display: inline-block;
+  height: auto;
+}
