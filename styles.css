@@ -1,0 +1,67 @@
+body{
+  background-color: #C2DBDE;
+  font-family: Lato;
+  font-size: 17px;
+  color:#000
+}
+
+.text-primary-color{
+  color:#000
+}
+
+title{
+  color:#000
+}
+
+img{
+  max-width: 100%;
+}
+
+.navbar{
+  background-color: #ABD0D0;
+  text-align: center;
+  widows: 100%;
+}
+
+.nav-item{
+  float: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.navbar-brand{
+  text-transform: uppercase;
+}
+
+.a{
+  text-transform: uppercase;
+}
+
+.footer{
+  background-color: #ABD0D0;
+}
+
+.overlay-text{
+  font-size: 3vw;
+  font-family: Lato;
+  font-weight: thin;
+  float: left;
+  width: 65%;
+  bottom: 21vw;
+  padding: 25px;
+  background-color: #E9DBD1D9
+}
+
+.section{
+  margin-top: 50px!important;
+  margin: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-emphasis: weigh;
+  font-family: Lato;
+  font-weight: thin;
+}
