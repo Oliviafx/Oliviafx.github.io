@@ -23,6 +23,16 @@ img{
   widows: 100%;
 }
 
+.navbar .navbar-nav{
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 .nav-item{
   float: none;
   text-align: center;
@@ -31,6 +41,15 @@ img{
 
 .navbar-brand{
   text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  display: flex;
+  align-items: center;
+}
+
+.description{
+  background-color: #E9DBD1D9
 }
 
 .a{
