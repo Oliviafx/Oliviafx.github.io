@@ -2,15 +2,18 @@ body{
   background-color: #C2DBDE;
   font-family: Lato;
   font-size: 17px;
-  color:#000
+  color:#000 !important;
 }
 
 .text-primary-color{
-  color:#000
+  color:#000 !important;
 }
 
+.text-primary:focus,a.text-primary:hover
+{color:#286090} /*change this sometime*/
+
 title{
-  color:#000
+  color:#000 !important;
 }
 
 img{
@@ -41,6 +44,7 @@ img{
 
 .navbar-brand{
   text-transform: uppercase;
+  color: #000
 }
 
 .navbar-nav > li > a {
