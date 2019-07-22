@@ -1,3 +1,8 @@
+title{
+  color:#000 !important;
+/*  font-family: 'Dancing Script', cursive;*/
+}
+
 body{
   background-color: #C2DBDE;
   font-family: Lato;
@@ -9,24 +14,28 @@ div{
   display: inline-block;
 }
 
+.text-primary{
+  color:#000 !important;
+  font-family: 'Dancing Script', cursive;
+}
+
 .text-primary-color{
   color:#000 !important;
 }
 
 .text-primary:focus,a.text-primary:hover
-{color:#286090} /*change this sometime*/
+{color:#0abab5} /*currently tiffany blue*/
 
-title{
-  color:#000 !important;
-}
+
 
 img{
   /* max-width: 100%; */
   text-align: center;
+  display: inline-block;
 }
 
 .navbar{
-  background-color: #ABD0D0;
+/*  background-color: #ABD0D0;*/
   text-align: center;
   widows: 100%;
 }
@@ -66,7 +75,7 @@ img{
 }
 
 .footer{
-  background-color: #ABD0D0;
+/*  background-color: #ABD0D0;*/
 }
 
 .overlay-text{
