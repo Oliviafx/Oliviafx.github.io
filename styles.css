@@ -17,7 +17,8 @@ div{
 .text-primary{
   color:#000 !important;
   font-family: 'Dancing Script', cursive;
-  font-size: 200px;
+  font-size: 40px;
+  padding: 40px;
 }
 
 .text-primary-color{
