@@ -1,6 +1,5 @@
 title{
   color:#000 !important;
-/*  font-family: 'Dancing Script', cursive;*/
 }
 
 body{
@@ -12,6 +11,13 @@ body{
 
 div{
   display: inline-block;
+}
+
+.contact {
+	position: absolute;
+	top: 0px;
+	right:0px;
+	padding: 15px;
 }
 
 .text-primary{
@@ -70,6 +76,8 @@ img{
 
 .description{
   /* background-color: #E9DBD1D9 */
+    font-family: Lato;
+  font-weight: thin;
 }
 
 .a{
