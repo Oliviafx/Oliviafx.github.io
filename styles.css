@@ -6,7 +6,7 @@ body{
   font-family: Lato;
 }
 
-main {
+main {  
 
 }
 
@@ -59,7 +59,7 @@ main {
 
 .nav-masthead .active {
   color: #000;
-  border-bottom-color: #000;
+  border-bottom-color: #F7CAC9;
 }
 
 @media (min-width: 48em) {
@@ -106,7 +106,6 @@ main {
 }
 
 .polaroid {
-  display: inline-flex;
   background-color: #FDFAF5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: fit-content;
@@ -116,12 +115,29 @@ main {
 .polaroid-img {
 /*  width: 100%;
   background: url("images/cityoflight/cover.png") no-repeat top center;*/
+  max-width: 100%;
+  display: inline-flex;
+  max-width: fit-content;
 }
 
-.img {
+.me{
+  width: 200px;
+}
+
+.cityoflight {
   /*width: 100%;*/
   width: 200px;
   height: 200px;
+}
+
+.swiperight {
+  width: 200px;
+  height: 200px;
+}
+
+.fbmessenger {
+/*  width: 200px;
+  height: 200px;*/
 }
 
 .polaroid-desc {
@@ -143,6 +159,7 @@ main {
 
 .blog-post {
   margin-bottom: 4rem;
+  text-align: left;
   font-family: Lato;
 }
 .blog-post-title {
@@ -154,4 +171,8 @@ main {
   font-family: Bitter;
   margin-bottom: 1.25rem;
   color: #999;
+}
+
+.video {
+  align-content: center;
 }
