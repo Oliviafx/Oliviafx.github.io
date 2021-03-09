@@ -97,12 +97,24 @@ main {
   transform: translate(-50%, -50%);
 }
 
+.cover-caption {
+  font-family: 'Indie Flower';
+  color: #FFF;
+  position: absolute;
+  bottom: 4px;
+  right: 16px;
+}
+
 .btn {
   background-color: transparent;
 /*  background-color: #FDFAF5;*/
   border: none;
 /*  width: 200px;
   height: 200px;*/
+}
+
+.btn:hover {
+   background: #F7CAC9;
 }
 
 .polaroid {
