@@ -19,6 +19,67 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link href="styles.css" rel="stylesheet">
+
+
+  <style>
+/* Popup container - can be anything you want */
+.popup, .popup1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext, .popup1  {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+
 </head>
 
 <body class="text-center">
@@ -103,10 +164,11 @@
     <img src="blog/covers/donuttrap.jpg" style="height: 200px;">
   </a>
 
-  <a href="blog/posts/achorusrises.html" class="btn btn-light mb-5"> 
-    <img src="blog/covers/achorusrises.jpg" style="height: 200px;">
+  <a href="blog/posts/firstlovetaketwo.html" class="btn btn-light mb-5"> 
+    <img src="blog/covers/firstlovetaketwo.jpg" style="height: 200px;">
   </a>
 
+ 
   
 </div> <!-- row-->
 
@@ -114,20 +176,22 @@
 <div class="container row d-flex justify-content-center shelf mt-5" style="background-image: url(blog/dividers/shelf.png); background-repeat: no-repeat;background-position: center bottom;">
 
 
-    <a href="blog/posts/tsoa.html" class="btn btn-light mb-5"> 
-    <img src="blog/covers/tsoa.jpg" style="height: 200px;">
-  </a>
-
-   <a href="blog/posts/onwriting.html" class="btn btn-light mb-5"> 
-    <img src="blog/covers/onwriting.jpg" style="height: 200px;">
-  </a>
-
   <a href="blog/posts/sunnysong.html" class="btn btn-light mb-5"> 
     <img src="blog/covers/sunnysong.jpg" style="height: 200px;">
   </a>
 
-  <a href="blog/posts/catana.html" class="btn btn-light mb-5"> 
-    <img src="blog/covers/catana.jpg" style="height:200px;">
+  <a onclick="comingSoon()" class="btn btn-light mb-5 popup"> 
+    <span class="popuptext" id="myPopup">Currently Reading - Coming Soon!</span>
+    <img src="blog/covers/cursedcarnival.jpg" style="height: 200px;">
+  </a>
+
+  <a onclick="comingSoon1()" class="btn btn-light mb-5 popup"> 
+    <span class="popuptext" id="myPopup1">Currently Reading - Coming Soon!</span>
+    <img src="blog/covers/tristanstrongkeepspunching.jpg" style="height: 200px;">
+  </a>
+
+   <a href="blog/posts/achorusrises.html" class="btn btn-light mb-5"> 
+    <img src="blog/covers/achorusrises.jpg" style="height: 200px;">
   </a>
 
   
@@ -159,22 +223,46 @@
 
 <div class="container row d-flex justify-content-center shelf mt-5" style="background-image: url(blog/dividers/shelf.png); background-repeat: no-repeat;background-position: center bottom;">
 
-   <a href="blog/posts/languagemyths.html" class="btn btn-light mb-5"> 
-    <img src="blog/covers/languagemyths.jpg" style="height:200px;">
+    <a href="blog/posts/tsoa.html" class="btn btn-light mb-5"> 
+    <img src="blog/covers/tsoa.jpg" style="height: 200px;">
   </a>
+
+  <a href="blog/posts/catana.html" class="btn btn-light mb-5"> 
+    <img src="blog/covers/catana.jpg" style="height:200px;">
+  </a>
+
+   <a href="blog/posts/onwriting.html" class="btn btn-light mb-5"> 
+    <img src="blog/covers/onwriting.jpg" style="height: 200px;">
+  </a>
+
+
+  
 
   <a href="blog/posts/anxiety.html" class="btn btn-light mb-5"> 
     <img src="blog/covers/anxiety.jpg" style="height: 200px;">
   </a>
 
-  <a href="blog/posts/bookweaver.html" class="btn btn-light mb-5"> 
-    <img src="blog/covers/bookweaver.jpg" style="height: 200px;">
-  </a>
+  
+
+  
+
+
+</div> <!-- row-->
+
+
+<div class="container row d-flex justify-content-center shelf mt-5" style="background-image: url(blog/dividers/shelf.png); background-repeat: no-repeat;background-position: center bottom;">
 
   <a href="blog/posts/subtleart.html" class="btn btn-light mb-5"> 
     <img src="blog/covers/subtleart.jpg" style="height: 200px;">
   </a>
 
+   <a href="blog/posts/languagemyths.html" class="btn btn-light mb-5"> 
+    <img src="blog/covers/languagemyths.jpg" style="height:200px;">
+  </a>
+
+ <a href="blog/posts/bookweaver.html" class="btn btn-light mb-5"> 
+    <img src="blog/covers/bookweaver.jpg" style="height: 200px;">
+  </a>
 
 </div> <!-- row-->
 
@@ -386,6 +474,23 @@ SimpleJekyllSearch({
   exclude: ['Welcome']
 })
 </script>
+
+
+
+<script>
+function comingSoon() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+<script>
+function comingSoon1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+</script>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
