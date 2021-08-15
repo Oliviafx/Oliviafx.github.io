@@ -82,7 +82,7 @@
 
 </head>
 
-<body class="text-center">
+<body class="text-center" onload = "displayLetters()">
 
   <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
     <header class="masthead mb-auto p-3">
@@ -106,8 +106,14 @@
 
 <div class="container-fluid row" style="width:100%;" >
 
+<div class="container row" id="sortByLetters" > 
+	<a onclick="displayAll()" class="btn btn-light mb-5" style="font-family: 'Dancing Script', cursive;font-size:25px;">All Titles</a>
+</div>
 
-  <div class="container justify-content-start col-md-9">
+  <div class="container justify-content-start col-md-9" >
+
+<div class="container" id = "allShelves">
+<!-- Shelves -->
 
 
  <div class="container row">
@@ -211,7 +217,7 @@
   </a>
 
   <a href="blog/posts/neverfallforyourfiancee.html" class="btn btn-light mb-5"> 
-    <img src="blog/covers/neverfall.jpg" style="height:200px;">
+    <img src="blog/covers/neverfallforyourfiancee.jpg" style="height:200px;">
   </a>
 
   <a href="blog/posts/crown.html" class="btn btn-light mb-5"> 
@@ -270,8 +276,11 @@
 
 </div> <!-- row-->
 
+</div> <!-- all shelves-->
 
-
+<div class="container" id="searchShelves">
+	
+</div>
 
 
 </div>
@@ -493,6 +502,100 @@ function comingSoon1() {
   var popup = document.getElementById("myPopup1");
   popup.classList.toggle("show");
 }
+</script>
+
+
+<script type="text/javascript">
+
+	//global dictionary of titles
+	var titles = {
+			"A": ["achorusrises", "acupofsilverlinings"],
+			"B": ["battleroyal", "bookweaver"],
+			"C": ["cursedcarnival"],
+			"D": [ "thedatingplaybook","donuttrap"],
+			"E": [],
+			"F": ["firstlovetaketwo", "fortheloveoffriends"],
+			"G": [],
+			"H": ["howsweetitis"],
+			"I": ["catana","theinheritanceoforquideadivina", "ironwidow" ],
+			"J": [],
+			"K": [],
+			"L": ["languagemyths"],
+			"M": [],
+			"N": ["neverfallforyourfiancee"],
+			"O": ["onwriting"],
+			"P": [],
+			"Q": [],
+			"R": [],
+		 	"S": ["crown","sixcrimsoncranes", "tsoa", "subtleart", "sunnysong"],
+			"T": ["anxiety", "tokyo", "tristanstrongkeepspunching"],
+			"U": [],
+			"V": [],
+			"W": [],
+			"X": [],
+			"Y": [],
+			"Z": []
+		}
+
+	function organize(letter){
+
+		//alert("clicked");
+		document.getElementById("allShelves").style.display = 'none';
+		document.getElementById("searchShelves").style.display = 'block';
+
+		//console.log("we are calling organize " + letter);
+
+		var thesetitles = titles[letter];
+		//console.log("these titles" + thesetitles);
+
+		var html = '<div class="container row d-flex justify-content-center shelf mt-5" style="background-image: url(blog/dividers/shelf.png); background-repeat: no-repeat;background-position: center bottom;">';
+
+		for(var i = 0; i < thesetitles.length; i++){
+			html += '<a href="blog/posts/' + thesetitles[i] + '.html"  class="btn btn-light mb-5">';
+			html += '<img src="blog/covers/' + thesetitles[i] + '.jpg" style="height: 200px;">';
+			html += '</a>';
+
+			if( i > 0 && (i%4==3) && (i != (thesetitles.length-1)) ){
+				console.log("more than one shelf!")
+				html += '</div>';
+				html += '<div class="container row d-flex justify-content-center shelf mt-5" style="background-image: url(blog/dividers/shelf.png); background-repeat: no-repeat;background-position: center bottom;">'; //start a new shelf
+			}
+		}
+
+		html += '</div>';
+
+		console.log("this new html " + html);
+
+		document.getElementById("searchShelves").innerHTML = html;
+		//console.log("element " + document.getElementById("searchShelves").innerHTML);
+	}
+
+	function displayLetters(){
+		var html = '';
+		//console.log("html is " + html);
+
+		var alphabet = Object.keys(titles);
+		//console.log("alphabet " + alphabet);
+
+		for(var i = 0; i < alphabet.length; i++){
+			var thesetitles =  titles[alphabet[i]];
+			//console.log(alphabet[i]);
+			//console.log(thesetitles);
+			if( thesetitles.length > 0) {
+				html += '<a onclick="organize(' +'\'' + alphabet[i] +'\''  + ')" class="btn btn-light mb-5" style="font-family: \'Dancing Script\', cursive;font-size:25px;">' ;
+				html += alphabet[i];
+				html += '</a>';
+			}
+		}
+		//console.log(html);
+		document.getElementById("sortByLetters").innerHTML += html;
+	}
+
+	function displayAll(){
+		document.getElementById("allShelves").style.display = 'block';
+		document.getElementById("searchShelves").style.display = 'none';
+	}
+
 </script>
 
 
